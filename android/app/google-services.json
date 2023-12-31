@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858852857854",
+    "project_id": "chat-pi-6379e",
+    "storage_bucket": "chat-pi-6379e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858852857854:android:87eaee4360fc4bd54c12af",
+        "android_client_info": {
+          "package_name": "com.example.chatpi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADbBSR7ZaMVRqbrOngHduR2FnTw2oT9aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
