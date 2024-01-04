@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,16 +49,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBWJrHga5o73BvfSsBGgM4nnRkM7j-luaM',
-    appId: '1:858852857854:web:4278181171d451944c12af',
-    messagingSenderId: '858852857854',
-    projectId: 'chat-pi-6379e',
-    authDomain: 'chat-pi-6379e.firebaseapp.com',
-    storageBucket: 'chat-pi-6379e.appspot.com',
-    measurementId: 'G-QGLCTW5L42',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyADbBSR7ZaMVRqbrOngHduR2FnTw2oT9aQ',
     appId: '1:858852857854:android:87eaee4360fc4bd54c12af',
@@ -67,15 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '858852857854',
     projectId: 'chat-pi-6379e',
     storageBucket: 'chat-pi-6379e.appspot.com',
+    androidClientId: '858852857854-nu9uh430v4398o6idbg0lj66ehbsjqe1.apps.googleusercontent.com',
+    iosClientId: '858852857854-t44gbnsbu1et4assfjjst8dthsnigg68.apps.googleusercontent.com',
     iosBundleId: 'com.example.chatpi',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCmNfTkyNA5CU_SF7IosEsi-mqM7uJHdXA',
-    appId: '1:858852857854:ios:739cab7941a420564c12af',
-    messagingSenderId: '858852857854',
-    projectId: 'chat-pi-6379e',
-    storageBucket: 'chat-pi-6379e.appspot.com',
-    iosBundleId: 'com.example.chatpi.RunnerTests',
   );
 }

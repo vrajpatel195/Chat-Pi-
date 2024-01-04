@@ -12,7 +12,20 @@
           "package_name": "com.example.chatpi"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "858852857854-nu9uh430v4398o6idbg0lj66ehbsjqe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatpi",
+            "certificate_hash": "7a7cce8b1b37d1ecf52b1625c8eca86036d01ae9"
+          }
+        },
+        {
+          "client_id": "858852857854-5j8chia85e99vqo7i4f597erbcqbrgpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyADbBSR7ZaMVRqbrOngHduR2FnTw2oT9aQ"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858852857854-5j8chia85e99vqo7i4f597erbcqbrgpv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "858852857854-krvumcgmga4m673m1935u86gpvmqk12e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatpi.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
